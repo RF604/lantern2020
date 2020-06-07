@@ -18,4 +18,4 @@ fields:
     maxSize: 64
   label: Image Upload
 pages:
-- _posts/test-post.md
+- _posts/2020-06-07-test-post.md
