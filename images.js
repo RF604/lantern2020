@@ -1,29 +1,21 @@
-const animatedItem = document.querySelectorAll("section img, .map, .project-image")
-
-animatedItem.forEach(tag => {
-  tag.style.opacity = 0
-})
-
-const fadeIn = function () {
-  let delay = 0.2  
-  
-  animatedItem.forEach(tag => {
-    const tagTop = tag.getBoundingClientRect().top
-    const tagBottom = tag.getBoundingClientRect().bottom
-    
-    if (window.getComputedStyle(tag).opacity == 0 && tagTop < window.innerHeight) {
-      tag.style.animation = `fadein .5s ${delay}s both`
-      delay = delay + 0.14
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0.2) {
+      entry.target.classList.add("fade")
+    } else {
+      entry.target.classList.remove("fade")
     }
   })
-}
-
-fadeIn()
-
-document.addEventListener("scroll", function () {
-  fadeIn()
+}, {
+  threshold: [0, 0.2, 0.8, 1]
 })
 
-window.addEventListener("resize", function () {
-  fadeIn()
+const images = document.querySelectorAll('img');
+images.forEach(image => {
+  observer.observe(image)
+})
+
+const h1s = document.querySelectorAll('h1');
+h1s.forEach(h1 => {
+  observer.observe(h1)
 })
