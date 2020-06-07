@@ -1,13 +1,13 @@
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if (entry.intersectionRatio > 0.2) {
+    if (entry.intersectionRatio > 0.15) {
       entry.target.classList.add("fade")
     } else {
       entry.target.classList.remove("fade")
     }
   })
 }, {
-  threshold: [0, 0.2, 0.8, 1]
+  threshold: [0, 0.15, 0.85, 1]
 })
 
 const images = document.querySelectorAll('img');

@@ -533,7 +533,7 @@ footer {
 
 img {
      filter: grayscale(1) brightness(.25);
-     transition: filter 1.8s;
+     transition: filter 1.2s;
 }
 
 img.fade {
@@ -542,7 +542,7 @@ img.fade {
 
 h1 {
     color: darkgray;
-    transition: color 3s;
+    transition: color 2s;
 }
 
 h1.fade {
