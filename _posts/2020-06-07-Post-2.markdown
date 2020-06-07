@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Post 2
+title: 2 Bedroom Unit - Kerrisdale
 
 ---
 **2 bedroom unit – kerrisdale**
