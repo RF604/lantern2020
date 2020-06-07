@@ -531,50 +531,22 @@ footer {
 
 /* ANIMATIONS */
 
-.home-container {
-    animation-name: fade-in-home;
-    animation-duration: 1.5s;
+img {
+     filter: grayscale(1) brightness(.25);
+     transition: filter 1.8s;
 }
 
-@keyframes fade-in-home {
-    0% {
-        filter: saturate(.4);
-    }
-
-    100% {
-        filter: saturate(1);
-    }
+img.fade {
+    filter: grayscale(0) brightness(1);
 }
 
-.project-name {
-    animation-name: fade-in;
-    animation-duration: 3.5s;
+h1 {
+    color: darkgray;
+    transition: color 3s;
 }
 
-@keyframes fade-in {
-    0% {
-        opacity: .35;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-section img, .project-image {
-    opacity: 0;
-}
-
-@keyframes fadein {
-    0% {
-        transform: translateY(7px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
+h1.fade {
+    color: #353839;
 }
 
 
