@@ -1,0 +1,79 @@
+---
+title: Hadera – Lantern Properties
+layout: default
+---
+
+    <h1 class="project-name">Hadera</h1>
+
+    <div class="grid">
+        <img class="project-image" src="images/fort-1.jpeg">
+        <img class="project-image" src="images/fort-2.jpeg">
+        <img class="project-image" src="images/fort-3.jpeg">
+    </div>
+
+    <br><br>
+
+    <div class="project-content">
+        <div class="project-description">
+            <h3>About Hadera (1475 Fort St)</h3>
+            <p>Hadera is a collection of 33 rental homes in Victoria's beautiful Rockland community. Hadera is situated approximately 40 feet back from Fort Street, creating a peaceful and quiet environment for residents. The project is estimated to be complete by March 2021.</p>
+
+            <p>Architect: <a href="http://cascadiaarchitects.ca/" target="_blank">Cascadia Architects</a></p>
+
+            <p>Owner’s Representative: <a href="https://paladondevelopment.com/projects/" target="_blank">Paladon Development</a></p>
+
+            <p>Contractor: TBD</p>
+
+        </div>
+
+
+
+        <form action="https://formspree.io/xnqvoryr" method="POST" target="_blank">
+
+            <h3>Join Our Waitlist</h3>
+
+            <input type="text" name="name" id="full-name" placeholder="Full Name" required="">
+
+            <input type="email" name="_replyto" id="email-address" placeholder="Email Address" required="">
+
+            <input type="telephone" name="telephone" id="telephone" placeholder="Telephone Number (Optional)">
+
+            <input type="background" id="message" placeholder="How did you hear about us?">
+
+            <select name="bedrooms" id="bedrooms" required="">
+                <option value="Choose" selected="" disabled="">Preferred Suite Format</option>
+                <option value="0">No Preference</option>
+                <option value="1">1 Bedroom</option>
+                <option value="2">2 Bedroom</option>
+            </select>
+
+            <select name="pets" id="pets" required="">
+                <option value="Choose" selected="" disabled="">Pet Ownership</option>
+                <option value="1">I have pets</option>
+                <option value="2">I do not have pets</option>
+            </select>
+
+            <input type="submit" id="submit" value="Submit Responses">
+
+        </form>
+
+
+
+
+
+        <div class="other-developments">
+            <h3>Other Projects Under Development</h3>
+            <a href="/kirya.html" style='text-decoration:none;'><button>Kirya &ensp; (1188 Burnaby St.)</button></a>
+            <a href="/malinview.html" style='text-decoration:none;'><button>Malinview &ensp; (2254 McGill St.)</button></a>
+
+            <div>
+                <b>Development Inquiries:</b>
+            </div>
+            <a href="mailto:inquiries@lanprop.com">inquiries@lanprop.com</a>
+            <br><br>
+        </div>
+
+    </div>
+
+
+{% include scripts.html %}
