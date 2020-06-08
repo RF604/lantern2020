@@ -2,20 +2,17 @@
 label: Listing
 hide_body: false
 fields:
-- name: listing-title
+- name: listing-heading
   type: text
   config:
     required: false
-  label: Title
-- name: listing-description
-  type: textarea
-  default: ''
+  label: Listing Heading
+  description: A basic 1-line description of the listing.
+- name: listing-address
+  type: text
   config:
     required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Listing Description
+  label: Listing Address
 - name: listing-images
   type: image_gallery
   config: {}
