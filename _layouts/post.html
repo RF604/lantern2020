@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{{ content }}
+
+
+<section>
+    {% for post in site.posts %}
+    <div>{{ post.content}}</div>
+    {% endfor %}
+</section>
