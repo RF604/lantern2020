@@ -8,3 +8,5 @@ fields:
 - type: text
   name: title
   label: title
+pages:
+- _posts/3-bedroom-2-bath-ubc.md
