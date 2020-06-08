@@ -4,7 +4,7 @@ layout: default
 
 <h1 class="project-name">{{ page.title }}</h1>
 
-<section class="listings-page-">
+<section class="">
 
     {% for post in site.posts %}
 
@@ -12,9 +12,7 @@ layout: default
         <h2>{{ post.listing-heading }}</h2>
         <h3>{{ post.listing-address }}</h3>
         <p>{{ post.content }}</p>
-            {% for .listing-images in post %}
-                <img src="{{ post.listing-images }}">
-            {% endfor %}
+        <img src="{{ post.listing-images }}">
     </div>
 
     {% endfor %}
