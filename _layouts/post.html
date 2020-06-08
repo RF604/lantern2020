@@ -12,7 +12,7 @@ layout: default
         <h2>{{ post.listing-heading }}</h2>
         <h3>{{ post.listing-address }}</h3>
         <p>{{ post.content }}</p>
-            {% for post.listing-images in post %}
+            {% for .listing-images in post %}
                 <img src="{{ post.listing-images }}">
             {% endfor %}
     </div>
