@@ -17,3 +17,5 @@ fields:
   type: image_gallery
   config: {}
   label: Listing Images
+pages:
+- _posts/Modern Home Listing.md
