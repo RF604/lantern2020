@@ -370,9 +370,6 @@ a:hover {
     color: #2B3D82;
 }
 
-
-
-
 /* PROJECT PAGES */
 .project-content {
     width: calc(100% - 100px);
@@ -380,7 +377,6 @@ a:hover {
     border-top: solid 1px;
     text-align: center;
 }
-
 .project-name {
     border-top: 1px solid #242124;
     border-bottom: 1px solid #242124;
@@ -388,11 +384,9 @@ a:hover {
     width: calc(100% - 100px);
     margin: 80px auto 50px auto;
 }
-
 .project-image {
     padding-bottom: 30px;
 }
-
 .grid {
     display: grid;
     grid-gap: 50px;
@@ -400,7 +394,6 @@ a:hover {
     width: calc(100% - 100px);
     margin: 0 auto;
 }
-
 .grid img {
     padding: 0;
     width: 100%;
@@ -421,7 +414,6 @@ a:hover {
     padding: 15px 0 10px 0;
     width: 100%;
 }
-
  form * {
     display: block;
     width: 100%;
@@ -429,7 +421,6 @@ a:hover {
     max-width: 550px;
     margin: 0 auto;
 }
-
 form input,
 form select {
     margin-top: 12px;
@@ -450,7 +441,6 @@ form select {
     appearance: none;
     background-image:none;
 }
-
 form #submit {
     background-color: transparent;
     border: 2px solid;
@@ -461,30 +451,24 @@ form #submit {
     color: #242124;
     height: auto;
 }
-
 form #submit:hover {
     background-color: #3F6152;
     color: white;
     cursor: pointer;
     border-color: #3F6152;
 }
-
 form h3 {
     padding: 5px 0 18px 0;
 }
-
-
 
 .other-developments {
     width: 100%;
     margin: 20px auto 0 auto;
     border-top: 1px solid;
 }
-
 .other-developments div {
     padding-top: 3px;
 }
-
 .other-developments a button  {
     margin: 10px auto;
     display: block;
@@ -500,13 +484,45 @@ form h3 {
     transition: .2s ease-in-out;
     
 }
-
 .other-developments button:hover {
     background-color: #3F6152;
     color: white;
     cursor: pointer;
     border-color: #3F6152;
 }
+
+
+/* LISTINGS */
+
+.listings-grid {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+    grid-template-rows: auto;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+}
+
+.listings-grid.listing.ul {
+    list-style: none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* FOOTER */
@@ -518,39 +534,29 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
-
 .footer div a {
     white-space: nowrap;
 }
-
 .footer-left a:hover {
     color: #242124;
 }
 
 
-
 /* ANIMATIONS */
-
 img {
      filter: grayscale(1) brightness(.25);
      transition: filter 1.2s;
 }
-
 img.fade {
     filter: grayscale(0) brightness(1);
 }
-
 h1 {
     color: darkgray;
     transition: color 2s;
 }
-
 h1.fade {
     color: #353839;
 }
-
-
-
 
 
 
