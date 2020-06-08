@@ -1,4 +1,22 @@
 ---
 label: Listing
 hide_body: false
-fields: []
+fields:
+- name: listing-title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: listing-description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Listing Description
+- name: listing-images
+  type: image_gallery
+  config: {}
+  label: Listing Images
