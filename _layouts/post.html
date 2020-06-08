@@ -2,11 +2,19 @@
 layout: default
 ---
 
-{{ content }}
+<h1 class="project-name">{{ page.title }}</h1>
 
-
-<section>
+<section class="listings-page-">
+    
     {% for post in site.posts %}
-    <div>{{ post.content}}</div>
+    
+    <div>
+        <h2>{{ post.listing-heading}}</h2>
+        <h3>{{ post.listing-address}}</h3>
+        <p>{{ post.content}}</p>
+        <div>{{ post.listing-images}}</div>
+    </div>
+    
     {% endfor %}
+    
 </section>
