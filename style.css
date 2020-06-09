@@ -94,7 +94,6 @@ header a:hover {
   color: white;
   text-decoration: underline;
 }
-
 div.project-header {
   width: 100%;
   height: 30px;
@@ -156,7 +155,6 @@ header button:hover {
   cursor: pointer;
 }
 
-
 /* HOME */
 .home-container {
   height: 100vh;
@@ -194,7 +192,6 @@ header button:hover {
   color: transparent;
   background-color: transparent;
 }
-
 .contact-info {
   margin-top: 50px;
   border-top: 1px solid;
@@ -210,9 +207,6 @@ header button:hover {
   text-align: center;
   margin: 6px 0;
 }
-
-
-
 
 /* PROJECT PAGES */
 form {
@@ -265,9 +259,33 @@ form #submit:hover {
 }
 
 
+/* LISTINGS */
+.grid ul {
+  list-style: none;
+  margin: 0 0 40px 0;
+  padding: 20px 0 0 0;
+  background-color: lightgray;
+}
+.grid ul li {
+  min-width: 100%;
+  padding: 0 20px 20px 20px;
+}
 
-
-
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  border-top: solid 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer div a {
+  white-space: nowrap;
+}
+.footer-left a:hover {
+  color: #242124;
+}
 
 /*TEXT*/
 *,
@@ -312,7 +330,6 @@ h3 {
 p {
   font-size: 16px;
 }
-
 p,
 a,
 b,
@@ -325,7 +342,6 @@ form * {
   font-style: normal;
   text-decoration: none;
 }
-
 button,
 a button {
   font-size: 14px;
@@ -350,63 +366,26 @@ a:hover {
 button.inquiries a {
   font-style: italic;
 }
-
-
-
-
-/* LISTINGS */
-.listings-grid {
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  grid-template-rows: auto;
-  width: calc(100% - 100px);
-  margin: 0 auto;
-}
-.listing-info {
-  padding-bottom: 10px;
-}
 .listing-info * {
+  text-align: justify;
   min-width: 100%;
 }
-.listing ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.listing ul li img {
-  min-width: 100%;
-}
-.listing h3 {
+.listing-info h3 {
   font-weight: 600;
 }
-.listing h4 {
+.listing-info h4 {
   text-align: left;
   margin: 2px 0 0 0;
   font-style: italic;
   padding-bottom: 6px;
   border-bottom: 1px solid lightgray;
 }
-.listing p {
-  margin-top: 20px;
+.listing-info p {
+  margin: 20px 0 0 0;
+  padding: 0;
 }
 
 
-/* FOOTER */
-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0px;
-  border-top: solid 1px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.footer div a {
-  white-space: nowrap;
-}
-.footer-left a:hover {
-  color: #242124;
-}
 
 
 /* ANIMATIONS */
@@ -425,9 +404,7 @@ h1.fade {
   color: #353839;
 }
 
-
 /* MOBILE */
-
 @media screen and (max-width: 1000px) {
 
   header {
@@ -492,6 +469,25 @@ h1.fade {
     height: 46vh;
   }
 
+  .grid ul {
+    padding: 10px 0 0 0;
+    margin-bottom: 10px;
+  }
+
+  .grid ul img {
+      max-height: 80vh;
+      object-fit: contain;
+      padding: 0;
+      margin: 0;
+  }
+
+  .grid ul li {
+      min-width: 100%;
+      background-color: lightgray;
+      padding: 0 10px 10px 10px;
+      margin: 0;
+  }
+
   .developments-menu button {
     min-width: 100%;
   }
@@ -522,6 +518,11 @@ h1.fade {
     font-size: 14px;
   }
 
+  .listing-info h3 {
+    font-size: 22px;
+    margin: 10px 0 0 0;
+  }
+
   header a {
     font-size: 20px;
   }
@@ -531,6 +532,7 @@ h1.fade {
     margin-bottom: 0;
     padding-bottom: 0;
   }
+
 
   img {
     filter: none;
