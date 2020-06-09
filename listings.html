@@ -4,6 +4,7 @@ title: Listings
 header-class: project-header
 ---
 
+
 <h1 class="project-name">{{ page.title }}</h1>
 
 <section class="listings-grid">
@@ -11,9 +12,12 @@ header-class: project-header
     {% for post in site.posts %}
 
     <div class="listing">
+
+      <div class="listing-info">
         <h3>{{ post.listing-heading }}</h3>
-        <h3>{{ post.listing-address }}</h3>
+        <h4>{{ post.listing-address }}</h4>
         <p>{{ post.content }}</p>
+      </div>
 
         <ul>
             {% for image in post.listing-images %}
@@ -24,5 +28,6 @@ header-class: project-header
     </div>
 
     {% endfor %}
+
 
 </section>
