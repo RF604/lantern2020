@@ -49,14 +49,11 @@ img {
   padding-bottom: 10px;
 }
 .flex-center button {
-  display: inline-block;
-  margin: 0 auto;
   background-color: transparent;
   border: 2px solid;
   border-radius: 2px;
   padding: 6px 22px;
   transition: .2s ease-in-out;
-
 }
 .grid#legacy-grid {
   background-color: lightgray;
@@ -65,7 +62,6 @@ img {
   object-fit: contain;
   padding-right: 30px;
 }
-
 .grid button:hover {
   background-color: #3F6152;
   color: white;
@@ -216,6 +212,63 @@ header button:hover {
 }
 
 
+
+
+/* PROJECT PAGES */
+form {
+  width: 500px;
+  max-width: 100%;
+}
+form * {
+  display: block;
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+form input,
+form select {
+  margin-top: 12px;
+  font-size: 14px;
+  padding: 0 0 0 7px;
+  height: 30px;
+  line-height: 1.8;
+  border: 1px solid;
+  background-color: white;
+  border-color: lightgray;
+  color: gray;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: none;
+}
+form #submit {
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 2px;
+  padding: 0;
+  transition: .2s ease-in-out;
+  border-color: #242124;
+  color: #242124;
+}
+form #submit:hover {
+  background-color: #3F6152;
+  color: white;
+  cursor: pointer;
+  border-color: #3F6152;
+}
+.developments-menu {
+  width: 500px;
+  max-width: 100%;
+}
+
+
+
+
+
+
 /*TEXT*/
 *,
 header a,
@@ -259,6 +312,7 @@ h3 {
 p {
   font-size: 16px;
 }
+
 p,
 a,
 b,
@@ -271,6 +325,7 @@ form * {
   font-style: normal;
   text-decoration: none;
 }
+
 button,
 a button {
   font-size: 14px;
@@ -289,62 +344,13 @@ a:hover {
 }
 .developments-menu button {
   margin-bottom: 14px;
-}
-
-
-
-
-/* PROJECT PAGES */
-form {
-  width: 500px;
-  max-width: 100%;
-}
-form * {
-  display: block;
+  padding: 5px;
   width: 100%;
-  padding-top: ;
-  max-width: 550px;
-  margin: 0 auto;
 }
-form input,
-form select {
-  margin-top: 12px;
-  font-size: 14px;
-  padding: 0 0 0 7px;
-  height: 30px;
-  line-height: 1.8;
-  border: 1px solid;
-  background-color: white;
-  border-color: lightgray;
-  color: gray;
-  outline: none;
-  box-shadow: none;
-  border-radius: 0;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-image: none;
+button.inquiries a {
+  font-style: italic;
 }
-form #submit {
-  background-color: transparent;
-  border: 2px solid;
-  border-radius: 2px;
-  padding: 6px 0;
-  transition: .2s ease-in-out;
-  border-color: #242124;
-  color: #242124;
-  height: auto;
-}
-form #submit:hover {
-  background-color: #3F6152;
-  color: white;
-  cursor: pointer;
-  border-color: #3F6152;
-}
-.developments-menu {
-  width: 500px;
-  max-width: 100%;
-}
+
 
 
 
@@ -427,75 +433,112 @@ h1.fade {
   header {
     padding: 14px 10px;
   }
+
+  div.project-header {
+    height: 40px;
+  }
+
   .home-content div {
     width: calc(100% - 20px);
   }
+
   section,
   footer {
     text-align: center;
     margin: 10px 10px;
   }
+
   .grid {
     margin-bottom: 20px;
     grid-gap: 0px;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
   }
-  .grid#legacy-grid .flex-center, .grid#legacy-grid img {
-    padding: 0px;
+
+  .flex-center {
+    padding: 0 10px;
     background-color: transparent;
   }
+
+  .flex-center a  {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid#legacy-grid {
+    background-color: transparent;
+  }
+
+  .grid#legacy-grid .flex-center,
+  .grid#legacy-grid img {
+    padding: 0px;
+    background-color: transparent;
+    height: auto;
+  }
+
   .grid#legacy-grid {
     margin-top: -12px;
   }
+
   .grid img {
     height: auto;
-    padding: 10px;
-    background-color: lightgray;
+    padding-bottom: 20px;
+    background-color: transparent;
   }
+
   .grid.maps img {
     background-color: transparent;
     padding: 0 0 10px 0;
     height: 46vh;
   }
+
+  .developments-menu button {
+    min-width: 100%;
+  }
+
   .contact-info {
     margin-top: 0px;
     border-top: 1px solid;
     padding-bottom: 8px;
   }
+
   h1 {
     font-size: 30px;
     padding: 20px 0 22px 0;
     margin-top: 26px;
+    margin-bottom: 10px;
   }
+
   h2 {
     font-size: 18px;
   }
+
   .contact-info h2 {
     font-size: 30px;
     margin-top: 14px;
   }
+
   h3, p {
     font-size: 14px;
   }
+
   header a {
     font-size: 20px;
   }
- footer a {
-   font-size: 12px;
-   margin-bottom: 0px;
-   padding-bottom: 0;
- }
-  button,
-  a button,
-  .scrollprompt {
+
+  footer a {
     font-size: 12px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
+
   img {
     filter: none;
     transition: none;
   }
+
   img.fade {
     filter: none;
   }
+
 }
