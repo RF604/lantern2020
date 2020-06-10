@@ -298,7 +298,8 @@ form h3 {
   font-family: 'EB Garamond', serif;
   font-weight: 400;
 }
-header a {
+header a,
+header a span {
   font-size: 22px;
   color: white;
   text-decoration: none;
@@ -419,6 +420,16 @@ h1.fade {
   header {
     padding: 14px 10px;
   }
+  header a span {
+    display: none;
+  }
+  header button {
+    padding: 6px 12px;
+  }
+  header button:last-of-type {
+    margin-left: 10px;
+  }
+
   div.project-header {
     height: 40px;
   }
