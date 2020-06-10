@@ -498,8 +498,14 @@ h1.fade {
       background-color: transparent;
       padding: 0 0 6px 0;
   }
+  form {
+    padding-top: 10px;
+  }
   .developments-menu button {
     min-width: 100%;
+  }
+  .developments-menu h3.no-border-top {
+    padding-top: 10px;
   }
   .contact-info {
     margin-top: 0px;
