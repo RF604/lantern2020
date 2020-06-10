@@ -258,7 +258,6 @@ form #submit:hover {
   max-width: 100%;
 }
 
-
 /* LISTINGS */
 .grid ul {
   list-style: none;
@@ -358,6 +357,11 @@ a:hover {
   padding-top: 20px;
   border-top: 1px solid;
 }
+.developments-menu h3.no-border-top {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
 .developments-menu button {
   margin-bottom: 14px;
   padding: 5px;
@@ -386,8 +390,6 @@ button.inquiries a {
 }
 
 
-
-
 /* ANIMATIONS */
 img {
   filter: grayscale(1) brightness(.25);
@@ -406,141 +408,118 @@ h1.fade {
 
 /* MOBILE */
 @media screen and (max-width: 1000px) {
-
   header {
     padding: 14px 10px;
   }
-
   div.project-header {
     height: 40px;
   }
-
   .home-content div {
     width: calc(100% - 20px);
   }
-
   section,
   footer {
     text-align: center;
-    margin: 10px 10px;
+    margin: 10px;
   }
-
   .grid {
+    margin-top: 24px;
     margin-bottom: 20px;
     grid-gap: 0px;
     grid-template-columns: 100%;
     grid-auto-rows: auto;
   }
-
   .flex-center {
     padding: 0 10px;
     background-color: transparent;
   }
-
-  .flex-center a  {
-    display: flex;
-    justify-content: center;
+  .flex-center h3 {
+    font-weight: 600;
   }
-
+  .flex-center form h3,
+  .flex-center .developments-menu h3 {
+    text-align: center;
+  }
   .grid#legacy-grid {
     background-color: transparent;
+      margin-top: -12px;
   }
-
   .grid#legacy-grid .flex-center,
   .grid#legacy-grid img {
-    padding: 0px;
     background-color: transparent;
     height: auto;
+    padding: 0;
   }
-
-  .grid#legacy-grid {
-    margin-top: -12px;
-  }
-
+  .grid#legacy-grid h3 {
+        padding: 10px 0;
+        max-width: 500px;
+        font-weight: 400;
+    }
   .grid img {
     height: auto;
     padding-bottom: 20px;
     background-color: transparent;
   }
-
   .grid.maps img {
     background-color: transparent;
     padding: 0 0 10px 0;
     height: 46vh;
   }
-
   .grid ul {
     padding: 10px 0 0 0;
     margin-bottom: 10px;
   }
-
   .grid ul img {
       max-height: 80vh;
       object-fit: contain;
       padding: 0;
       margin: 0;
   }
-
   .grid ul li {
       min-width: 100%;
       background-color: lightgray;
       padding: 0 10px 10px 10px;
       margin: 0;
   }
-
   .developments-menu button {
     min-width: 100%;
   }
-
   .contact-info {
     margin-top: 0px;
     border-top: 1px solid;
     padding-bottom: 8px;
   }
-
   h1 {
     font-size: 30px;
     padding: 20px 0 22px 0;
     margin-top: 26px;
     margin-bottom: 10px;
   }
-
   h2 {
     font-size: 18px;
   }
-
   .contact-info h2 {
     font-size: 30px;
     margin-top: 14px;
   }
-
   h3, p {
     font-size: 14px;
   }
-
   .listing-info h3 {
     font-size: 22px;
     margin: 10px 0 0 0;
   }
-
   header a {
     font-size: 20px;
   }
-
   footer a {
     font-size: 12px;
-    margin-bottom: 0;
-    padding-bottom: 0;
   }
-
-
   img {
     filter: none;
     transition: none;
   }
-
   img.fade {
     filter: none;
   }
-
 }
