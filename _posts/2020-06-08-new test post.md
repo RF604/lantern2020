@@ -2,6 +2,8 @@
 listing-heading: Delightful Home with Ocean Views
 listing-address: 1234 Pacific Ave
 listing-images:
+- "/uploads/car.jpg"
+- "/uploads/secondkitchen.jpg"
 - "/uploads/carpet.jpg"
 
 ---
