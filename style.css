@@ -310,6 +310,10 @@ header a span {
 .project-header a span {
   color: #242124;
 }
+.project-header.scrolled a span {
+  color: white;
+}
+
 h1 {
   font-size: 62px;
   line-height: 1;
