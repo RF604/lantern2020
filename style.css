@@ -261,7 +261,6 @@ form #submit:hover {
 /* LISTINGS */
 .grid ul {
   list-style: none;
-  margin: 0 0 40px 0;
   padding: 20px 0 0 0;
   background-color: lightgray;
 }
@@ -269,6 +268,10 @@ form #submit:hover {
   min-width: 100%;
   padding: 0 20px 20px 20px;
 }
+.grid.listing-grid {
+  grid-auto-rows: max-content;
+}
+
 
 /* FOOTER */
 footer {
@@ -376,13 +379,16 @@ button.inquiries a {
 }
 .listing-info h3 {
   font-weight: 600;
+  line-height: 1.2;
+  padding: 10px 0;
+  border-top: 1px solid lightgray;
 }
 .listing-info h4 {
   text-align: left;
-  margin: 2px 0 0 0;
   font-style: italic;
-  padding-bottom: 6px;
-  border-bottom: 1px solid lightgray;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 .listing-info p {
   margin: 20px 0 0 0;
@@ -430,7 +436,7 @@ h1.fade {
     grid-auto-rows: auto;
   }
   .flex-center {
-    padding: 0 10px;
+    padding: 0;
     background-color: transparent;
   }
   .flex-center h3 {
@@ -441,8 +447,8 @@ h1.fade {
     text-align: center;
   }
   .grid#legacy-grid {
+    margin-top: -12px;
     background-color: transparent;
-      margin-top: -12px;
   }
   .grid#legacy-grid .flex-center,
   .grid#legacy-grid img {
@@ -457,8 +463,16 @@ h1.fade {
     }
   .grid img {
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     background-color: transparent;
+  }
+  .developments-in-progress .grid {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+  }
+  .developments-in-progress .grid:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
   }
   .grid.maps img {
     background-color: transparent;
@@ -466,8 +480,9 @@ h1.fade {
     height: 46vh;
   }
   .grid ul {
-    padding: 10px 0 0 0;
+    padding: 0 0 0 0;
     margin-bottom: 10px;
+    background-color: transparent;
   }
   .grid ul img {
       max-height: 80vh;
@@ -477,9 +492,8 @@ h1.fade {
   }
   .grid ul li {
       min-width: 100%;
-      background-color: lightgray;
-      padding: 0 10px 10px 10px;
-      margin: 0;
+      background-color: transparent;
+      padding: 0 0 6px 0;
   }
   .developments-menu button {
     min-width: 100%;
@@ -508,6 +522,11 @@ h1.fade {
   .listing-info h3 {
     font-size: 22px;
     margin: 10px 0 0 0;
+  }
+  .listing-info h3:first-of-type {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
   }
   header a {
     font-size: 20px;
