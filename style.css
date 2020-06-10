@@ -420,6 +420,9 @@ h1.fade {
   div.project-header {
     height: 40px;
   }
+  .home-container {
+    background-image: url(/images/home-background-mobile.jpg);
+  }
   .home-content div {
     width: calc(100% - 20px);
   }
