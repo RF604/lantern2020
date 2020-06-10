@@ -2,7 +2,6 @@
 listing-heading: Modern Home in the West End
 listing-address: 2200 Burnaby Street
 listing-images:
-- "/uploads/car.jpg"
 - "/uploads/jaffa-2.jpg"
 
 ---
