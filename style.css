@@ -164,7 +164,7 @@ header button:hover {
   justify-content: space-around;
   text-align: center;
   min-height: 340px;
-  background-image: url(/images/home2.jpg);
+  background-image: url(/images/home-background.jpg);
   background-size: cover;
   background-position: top;
 }
