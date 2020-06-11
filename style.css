@@ -27,7 +27,7 @@ img {
   display: grid;
   grid-gap: 40px;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: minmax(max-content, 60vh);
+  grid-auto-rows: minmax(400px, 60vh);
 }
 .grid img {
   object-fit: cover;
@@ -58,9 +58,11 @@ img {
 .grid#legacy-grid {
   background-color: lightgray;
 }
+.grid#legacy-grid  {
+  padding: 40px 40px 40px 0;
+}
 .grid#legacy-grid img {
   object-fit: contain;
-  padding: 30px 30px 30px 0;
 }
 .grid button:hover {
   background-color: #3F6152;
