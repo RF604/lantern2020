@@ -473,6 +473,7 @@ h1.fade {
   .grid#legacy-grid {
     margin-top: -12px;
     background-color: transparent;
+    padding: 0;
   }
   .grid#legacy-grid .flex-center,
   .grid#legacy-grid img {
