@@ -1,7 +1,29 @@
 ---
 listing-heading: Quiet, Bright Home With a View and a Balcony Near Downtown
 listing-address: 1180 Fort Street
-listing-images: []
+listing-images:
+- "/uploads/00505_jzdqzu1z4z6_0po0he_1200x900.jpg"
+- "/uploads/00r0r_3dkh2nty6uv_0po0he_1200x900.jpg"
+- "/uploads/00202_7ojyfpgkrtg_0po0he_1200x900.jpg"
+- "/uploads/01313_9ejpb7gkqj0_0po0he_1200x900.jpg"
+- "/uploads/00505_ibx3tizbufn_0t20jn_1200x900.jpg"
+- "/uploads/00101_h3paclcr7mm_0po0he_1200x900.jpg"
+- "/uploads/00z0z_beaiimi8pkv_0t20jn_1200x900.jpg"
+- "/uploads/00u0u_59cysjtc9m5_0t20j4_1200x900.jpg"
+- "/uploads/00r0r_jxkshg91oxt_0t20jn_1200x900.jpg"
+- "/uploads/00r0r_dcw77ogkaay_0po0he_1200x900.jpg"
+- "/uploads/00q0q_4m15jo2sonz_0he0po_1200x900.jpg"
+- "/uploads/00l0l_f2ayccjo71q_0t20jn_1200x900.jpg"
+- "/uploads/00k0k_kxiw5zdem49_0t20jn_1200x900.jpg"
+- "/uploads/00k0k_ipkwlsrww92_0po0he_1200x900.jpg"
+- "/uploads/00k0k_djjodkkpjgw_0t20jn_1200x900.jpg"
+- "/uploads/00i0i_fxx7ey8svun_0t20jn_1200x900.jpg"
+- "/uploads/00h0h_e29qzrgnh8u_0t20jn_1200x900.jpg"
+- "/uploads/00g0g_itujqjga2sc_0po0he_1200x900.jpg"
+- "/uploads/00f0f_s8krpmeeuo_0po0he_1200x900.jpg"
+- "/uploads/00d0d_9ga9rvyna9f_0t20jn_1200x900.jpg"
+- "/uploads/00c0c_5mymyqc1x1w_0t20jn_1200x900.jpg"
+- "/uploads/00b0b_55vzvz4hryd_0po0he_1200x900.jpg"
 
 ---
 $1295 / 1br - 588ft2
