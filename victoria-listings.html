@@ -13,8 +13,11 @@ header-class: project-header
 <p style="background-color: aquamarine; max-width: 400px; margin: 0 auto;">currently updating...</p>
 
 <ul class="listings-list">
-   {% assign links = site.posts | where: "city","victoria" %}
+
+   {% assign links = site.posts | where: "city", "Victoria" %}
+
    {% for link in links %}
+
    <li>
      <a href="{{ post.url }}">
        <h3>{{ post.listing-heading }}</h3>
@@ -24,7 +27,9 @@ header-class: project-header
      <img src="{{ image | relative_url }}">
      {% endfor %}
    </li>
+
    {% endfor %}
+
  </ul>
 
 </section>
