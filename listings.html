@@ -14,7 +14,7 @@ header-class: project-header
 
 <ul class="listings-list">
    {% assign links = site.posts | where: "city","Vancouver" %}
-   {% for link in site.posts %}
+   {% for link in links %}
    <li>
      <a href="{{ post.url }}">
        <h3>{{ post.listing-heading }}</h3>
