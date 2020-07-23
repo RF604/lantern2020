@@ -17,5 +17,24 @@ fields:
   type: image_gallery
   config: {}
   label: Listing Images
+- name: city
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - Vancouver
+    - Victoria
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: City
+- name: display-photo
+  type: file
+  config:
+    maxSize: 64
+  label: Display Photo
 pages:
 - _posts/2020-07-02-1180fortstreet.md
