@@ -18,15 +18,7 @@ header-class: project-header
 
    {% for link in links %}
 
-   <li>
-     <a href="{{ post.url }}">
-       <h3>{{ post.listing-heading }}</h3>
-     </a>
-     <h4>{{ post.listing-address }}</h4>
-     {% for image in post.display-photo %}
-     <img src="{{ image | relative_url }}">
-     {% endfor %}
-   </li>
+   <h3>{{ post.listing-heading }}</h3>
 
    {% endfor %}
 
