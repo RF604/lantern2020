@@ -44,5 +44,4 @@ fields:
   default: post
   hidden: true
 pages:
-- _posts/1180-fort.md
-- _posts/2020-07-23-1180-fort-street.md
+- _posts/2020-07-23-1180-fort.md
