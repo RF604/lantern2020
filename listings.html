@@ -13,7 +13,7 @@ header-class: project-header
 <p style="background-color: aquamarine; max-width: 400px; margin: 0 auto;">currently updating...</p>
 
 <ul class="listings-list">
-   {% assign posts = site.posts | where: "city", "vancouver" %}
+   {% assign posts = site.posts %}
    {% for post in posts %}
    <li>
      <a href="{{ post.url }}">
