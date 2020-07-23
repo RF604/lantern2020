@@ -1,6 +1,6 @@
 ---
 title: posts
-layout: home
+layout: posts
 ---
 
 test

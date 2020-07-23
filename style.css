@@ -12,6 +12,18 @@ body {
   margin: 0 auto;
   width: 100%;
 }
+main {
+  background-color: azure;
+  display: block;
+  max-width: 800px;
+}
+
+article {
+  display: block;
+  background-color: azure;
+}
+
+
 section,
 footer {
   text-align: center;
