@@ -41,7 +41,7 @@ fields:
   config:
     required: false
   label: layout
-  default: default
+  default: post
   hidden: true
 pages:
 - _posts/2020-07-02-1180fortstreet.md
