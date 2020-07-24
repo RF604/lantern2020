@@ -12,19 +12,38 @@ header-class: project-header
 
 <p style="background-color: aquamarine; max-width: 400px; margin: 0 auto;">currently updating...</p>
 
-<ul class="listings-list">
-   {% assign posts = site.posts %}
+<div class="listings-list">
+
+   {% assign posts = site.posts | where: "city" , "victoria" %}
+
    {% for post in posts %}
-   <li>
+
+   <div>
+
+     <div class="listing-info">
+
      <a>
        <h3>{{ post.listing-heading }}</h3>
      </a>
+
      <h4>{{ post.listing-address }}</h4>
-     {% for image in post.display-photo %}
-     <img src="{{ image | relative_url }}">
-     {% endfor %}
-   </li>
+
+     <p>{{ post.content }}</p>
+
+     </div>
+
+     <div class="listing-images-container">
+
+       {% for image in post.listing-images %}
+       <img class="listing-images" src="{{ image | relative_url }}">
+       {% endfor %}
+
+     </div>
+
+   </div>
+
    {% endfor %}
- </ul>
+
+ </div>
 
 </section>
