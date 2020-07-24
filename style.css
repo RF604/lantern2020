@@ -285,33 +285,8 @@ form #submit:hover {
   max-width: 600px;
   text-align: center;
 }
-.listings-list h3 {
-  font-weight: 600;
-  line-height: 1;
-  margin: 16px 0 10px 0;
-  padding: 0;
-}
-.listings-list h4 {
-  text-align: center;
-  display: inline-block;
-  font-style: italic;
-  margin: 0 0 10px 0;
-  padding: 0 10px;
-  line-height: 1;
-}
-.listings-list p {
-  margin: 20px 0;
-}
-.listings-list strong {
-  font-weight: 600;
-}
-.listings-list ul {
-  margin-top: -16px;
-  padding-left: 0;
-  list-style: none;
-}
-
 article {
+  margin-top: 50px;
   padding: 20px;
   width: 100%;
   height: 100%;
@@ -335,28 +310,6 @@ article {
   object-fit: cover;
   padding: 0;
 }
-@media screen and (max-width: 1000px) {
-    .listing-images-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-auto-rows: auto;
-      grid-gap: 10px;
-    }
-
-    .listing-images-container .listing-images {
-      width: 100%;
-      max-width: 600px;
-      height: 450px;
-      margin: 0 auto;
-      object-fit: cover;
-      padding: 0 10px;
-    }
-
-    .listings-list .listing-info {
-      padding: 10px;
-    }
-  }
-
 
 /* FOOTER */
 footer {
@@ -393,7 +346,6 @@ header a span {
 .project-header.scrolled a span {
   color: white;
 }
-
 h1 {
   font-size: 62px;
   line-height: 1;
@@ -469,7 +421,35 @@ button.inquiries a {
 strong {
   font-weight: 600;
 }
-
+.listings-list h3,
+article h3 {
+  font-weight: 600;
+  line-height: 1;
+  margin: 16px 0 10px 0;
+  padding: 0;
+}
+article h3 {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  padding-top: 0;
+  margin-top: 0;
+}
+.listings-list h4 {
+  text-align: center;
+  display: inline-block;
+  font-style: italic;
+  margin: 0 0 10px 0;
+  padding: 0 10px;
+  line-height: 1;
+}
+.listings-list p {
+  margin: 20px 0;
+}
+article h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
 
 /* ANIMATIONS */
 img {
@@ -634,6 +614,24 @@ h1.fade {
   }
   img.fade {
     filter: none;
+  }
+
+  .listing-images-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+  }
+  .listing-images-container .listing-images {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    margin: 0 auto;
+    object-fit: cover;
+    padding: 0;
+  }
+  .listings-list .listing-info {
+    padding: 10px;
   }
 }
 @media screen and (max-width: 500px) {
