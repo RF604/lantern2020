@@ -40,8 +40,8 @@ It is generously sized at 588 square feet. It has generous closet space. It has 
 – **Excellent Transit!** (Score of 71, nearby are 22 Vic/Hillside, 14 Vic/UVic, 19 Hillside Mall, 11 UVic Tillicum Mall)  
 – **Bikers Paradise!** (Score of 100, flat as a pancake)
 
-**Nearby + On-site Amenities  
-**– Nearby parks include Pioneer Square, Stadacona Park and Royal Athletic Park  
+**Nearby + On-site Amenities**  
+– Nearby parks include Pioneer Square, Stadacona Park and Royal Athletic Park  
 – Nice clean laundry room  
 – Storage locker  
 – Very quiet hallways
