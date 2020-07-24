@@ -23,8 +23,8 @@ fields:
   config:
     required: false
     options:
-    - '"vancouver"'
-    - '"victoria"'
+    - vancouver
+    - victoria
     source:
       type: simple
       section: 
