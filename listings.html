@@ -7,43 +7,39 @@ header-class: project-header
 <section>
 
 
-<h1 class="project-name">{{ page.title }}</h1>
+  <h1 class="project-name">{{ page.title }}</h1>
+
+  <p style="background-color: aquamarine; max-width: 400px; margin: 0 auto;">currently updating...</p>
+
+  <div class="listings-list">
+
+    {% assign posts = site.posts | where: "city" , "vancouver" %}
+
+    {% for post in posts %}
 
 
-<p style="background-color: aquamarine; max-width: 400px; margin: 0 auto;">currently updating...</p>
 
-<div class="listings-list">
+    <div>
 
-   {% assign posts = site.posts | where: "city" , "victoria" %}
+      <div class="listing-info">
 
-   {% for post in posts %}
+        <a>
+          <h3>{{ post.listing-heading }}</h3>
+        </a>
+        <h4>{{ post.listing-address }}</h4>
+        <p>{{ post.content }}</p>
+      </div>
 
-   <div>
+      <div class="listing-images-container">
+        {% for image in post.listing-images %}
+        <img class="listing-images" src="{{ image | relative_url }}">
+        {% endfor %}
+      </div>
 
-     <div class="listing-info">
+    </div>
 
-     <a>
-       <h3>{{ post.listing-heading }}</h3>
-     </a>
+    {% endfor %}
 
-     <h4>{{ post.listing-address }}</h4>
-
-     <p>{{ post.content }}</p>
-
-     </div>
-
-     <div class="listing-images-container">
-
-       {% for image in post.listing-images %}
-       <img class="listing-images" src="{{ image | relative_url }}">
-       {% endfor %}
-
-     </div>
-
-   </div>
-
-   {% endfor %}
-
- </div>
+  </div>
 
 </section>

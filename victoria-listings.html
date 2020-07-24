@@ -13,7 +13,7 @@ header-class: project-header
 
   <div class="listings-list">
 
-    {% assign posts = site.posts %}
+    {% assign posts = site.posts | where: "city" , "victoria" %}
 
     {% for post in posts %}
 
@@ -22,8 +22,6 @@ header-class: project-header
     <div>
 
       <div class="listing-info">
-
-        {{ post.city }}
 
         <a>
           <h3>{{ post.listing-heading }}</h3>
