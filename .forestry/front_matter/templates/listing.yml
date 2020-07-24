@@ -51,6 +51,12 @@ fields:
   hidden: true
   default: project-header
   description: Don't edit this.
+- name: rent
+  type: text
+  config:
+    required: false
+  label: Rent / br / sqft
+  description: e.g. "$1295 / 1br - 588ft2"
 pages:
 - _posts/2020-07-23-1180-fort.md-copy.md
 - _posts/2020-07-24-no-listings.md
