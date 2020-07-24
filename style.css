@@ -275,60 +275,36 @@ form #submit:hover {
 .listings-list {
   padding-top: 2px;
   background-color: #E9EFEC;
-  max-width: 1400px;
   margin: 20px auto;
 }
 .listings-list div {
   padding: 0 0 20px 0;
 }
-
-.listing-images-container {
-  display: grid;
-  max-width: 1400px;
-  margin: 0 20px;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: auto;
-  grid-gap: 20px;
-}
-
-.listing-images-container .listing-images {
-  width: 100%;
-  height: 450px;
-  max-width: 100%;
-  object-fit: cover;
-  padding: 0;
-}
-
 .listings-list .listing-info {
   margin: 0 auto;
   max-width: 600px;
-  text-align: justify;
-}
-
-.listings-list h3 {
   text-align: center;
+}
+.listings-list h3 {
   font-weight: 600;
-  line-height: 1.2;
-  margin: 0;
-  padding: 10px 0;
-  border-top: 1px solid #E9EFEC;
+  line-height: 1;
+  margin: 16px 0 10px 0;
+  padding: 0;
 }
 .listings-list h4 {
   text-align: center;
+  display: inline-block;
   font-style: italic;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 10px 0;
+  padding: 0 10px;
   line-height: 1;
 }
-
 .listings-list p {
   margin: 20px 0;
 }
-
 .listings-list strong {
   font-weight: 600;
 }
-
 .listings-list ul {
   margin-top: -16px;
   padding-left: 0;
@@ -336,17 +312,30 @@ form #submit:hover {
 }
 
 article {
-  
-  display: block;
   padding: 20px;
   width: 100%;
   height: 100%;
 }
-
-
-
-
-  @media screen and (max-width: 1000px) {
+.article-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px 20px 20px;
+  background-color: #E9EFEC;
+}
+.listing-images-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+}
+.listing-images-container .listing-images {
+  width: 100%;
+  height: 450px;
+  max-width: 100%;
+  object-fit: cover;
+  padding: 0;
+}
+@media screen and (max-width: 1000px) {
     .listing-images-container {
       display: grid;
       grid-template-columns: 1fr;
@@ -477,7 +466,9 @@ a:hover {
 button.inquiries a {
   font-style: italic;
 }
-
+strong {
+  font-weight: 600;
+}
 
 
 /* ANIMATIONS */

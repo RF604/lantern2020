@@ -13,13 +13,19 @@
 
     <h1>{{ page.listing-heading }}</h1>
 
-    {{ page.listing-heading }}
+    <div class="article-content">
 
-    {{ page.listing-address }}
+      <h3>{{ page.listing-address }}&ensp;|&ensp;{{ page.rent }}</h3>
 
-    {{ page.city }}
+    {{ content }}
 
-    {{ page.content }}
+    <div class="listing-images-container">
+      {% for image in page.listing-images %}
+      <img class="listing-images" src="{{ image | relative_url }}">
+      {% endfor %}
+    </div>
+
+  </div>
 
   </article>
 

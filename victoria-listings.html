@@ -15,28 +15,18 @@ header-class: project-header
 
     {% for post in posts %}
 
-
     <div>
-
       <div class="listing-info">
-
         <a href="{{ post.url }}">
           <h3>{{ post.listing-heading }}</h3>
+          <h4>{{ post.listing-address }}</h4>
+          <h4>{{ post.rent }}</h4>
+          <img src="{{ post.display-photo }}">
         </a>
-        <h4>{{ post.listing-address }}</h4>
-        <p>{{ post.content }}</p>
       </div>
-
-      <div class="listing-images-container">
-        {% for image in post.listing-images %}
-        <img class="listing-images" src="{{ image | relative_url }}">
-        {% endfor %}
-      </div>
-
     </div>
 
     {% endfor %}
-
   </div>
 
 </section>
