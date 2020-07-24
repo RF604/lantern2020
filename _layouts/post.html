@@ -7,13 +7,25 @@
 
 <body>
 
-    {% include header.html %}
+  {% include header.html %}
 
-    {{ post.content }}
+  <article>
 
-    {% include footer.html %}
+    <h1>{{ page.listing-heading }}</h1>
 
-    {% include scripts.html %}
+    {{ page.listing-heading }}
+
+    {{ page.listing-address }}
+
+    {{ page.city }}
+
+    {{ page.content }}
+
+  </article>
+
+  {% include footer.html %}
+
+  {% include scripts.html %}
 
 </body>
 

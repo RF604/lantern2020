@@ -9,8 +9,6 @@ header-class: project-header
 
   <h1 class="project-name">{{ page.title }}</h1>
 
-  <p style="background-color: aquamarine; max-width: 400px; margin: 0 auto;">Page under development...</p>
-
   <div class="listings-list">
 
     {% assign posts = site.posts | where: "city" , "victoria" %}
@@ -18,12 +16,11 @@ header-class: project-header
     {% for post in posts %}
 
 
-
     <div>
 
       <div class="listing-info">
 
-        <a>
+        <a href="{{ post.url }}">
           <h3>{{ post.listing-heading }}</h3>
         </a>
         <h4>{{ post.listing-address }}</h4>
