@@ -8,15 +8,6 @@ fields:
     required: false
   label: Listing Heading
   description: A basic 1-line description of the listing.
-- name: listing-address
-  type: text
-  config:
-    required: false
-  label: Listing Address
-- name: listing-images
-  type: image_gallery
-  config: {}
-  label: Listing Images
 - name: city
   type: select
   default: ''
@@ -31,11 +22,26 @@ fields:
       file: 
       path: 
   label: City
+- name: listing-address
+  type: text
+  config:
+    required: false
+  label: Listing Address
+- name: rent
+  type: text
+  config:
+    required: false
+  label: Rent / br / sqft
+  description: e.g. "$1295 / 1br - 588ft2"
 - name: display-photo
   type: file
   config:
     maxSize: 64
   label: Display Photo
+- name: listing-images
+  type: image_gallery
+  config: {}
+  label: Listing Images
 - name: layout
   type: text
   config:
@@ -51,12 +57,6 @@ fields:
   hidden: true
   default: project-header
   description: Don't edit this.
-- name: rent
-  type: text
-  config:
-    required: false
-  label: Rent / br / sqft
-  description: e.g. "$1295 / 1br - 588ft2"
 pages:
 - _posts/2020-07-23-1180-fort.md-copy.md
 - _posts/2020-07-24-no-listings.md
