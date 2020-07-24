@@ -43,6 +43,14 @@ fields:
   label: layout
   default: post
   hidden: true
+- name: header-class
+  type: text
+  config:
+    required: false
+  label: Header Class
+  hidden: true
+  default: project-header
+  description: Don't edit this.
 pages:
 - _posts/2020-07-23-1180-fort.md
 - _posts/2020-07-24-no-listings.md
