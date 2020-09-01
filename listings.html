@@ -17,9 +17,12 @@ header-class: project-header
 
     <div>
       <div class="listing-info">
-
+        <a href="{{ post.url }}">
           <h3>{{ post.listing-heading }}</h3>
-
+          <h4>{{ post.listing-address }}</h4>
+          <h4>{{ post.rent }}</h4>
+          <img src="{{ post.display-photo }}">
+        </a>
       </div>
     </div>
 
