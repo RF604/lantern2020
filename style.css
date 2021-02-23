@@ -168,6 +168,10 @@ header button:hover {
   cursor: pointer;
 }
 
+header div a:nth-of-type(-n+2) {
+  display: none;
+}
+
 /* HOME */
 .home-container {
   height: 100vh;
