@@ -154,14 +154,6 @@ header button {
   padding: 6px 22px;
   transition: .2s ease-in-out;
 }
-header button:after {
-  content: 'Listings';
-  display: inline-block;
-  padding-left: 4px;
-}
-header button.contact:after {
-  display: none;
-}
 header button:hover {
   background-color: #3F6152;
   color: white;
