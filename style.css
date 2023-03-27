@@ -74,7 +74,7 @@ img {
   margin: 5px 0;
 }
 .grid#legacy-grid h3:last-of-type {
-  margin: 20px 0;
+  margin: 20px 0 5px 0;
 }
 .grid#legacy-grid img {
   object-fit: contain;
