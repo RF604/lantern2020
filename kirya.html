@@ -1,10 +1,9 @@
 ---
 layout: default
 title: Kirya
+address: 1188 Burnaby St.
 header-class: project-header
 ---
-
-
 
 <section>
 
@@ -13,7 +12,7 @@ header-class: project-header
 <div class="grid project-page-grid">
   <div class="flex-center">
     <div>
-      <h3>About Kirya – (1188 Burnaby St.)</h3>
+      <h3>About {{ page.title }} -- {{ page.address }}</h3>
       <p>Kirya is a collection of 11 beautiful rental homes in Vancouver's vibrant West End – a brief walk from English Bay and the abundance of dining and shopping opportunities on Davie Street. Kirya offers residents everything they need in one of the world's most exciting neighbourhoods. The Burrard and the Granville Street bridges are a three-minute drive away, making Kirya an excellent choice for those who wish to make frequent trips out of downtown. Project construction starting September 2021, with completion by December 1, 2023.</p>
 
       <p>Architect: <a href="http://stuarthoward.com" target="_blank">Stuart Howard Architects</a>
@@ -56,17 +55,11 @@ header-class: project-header
         <input type="submit" id="submit" value="Submit Responses">
     </form>
 
-    <div class="developments-menu">
-        <h3>Additional Projects Under Development</h3>
-          <div><a href="/hadera.html"><button>Hadera &ensp; (1475 Fort St.)</button></a></div>
-          <div><a href="/malinview.html"><button>Malinview &ensp; (2254 McGill St.)</button></a></div>
-
-          <button class="inquiries"><a href="mailto:inquiries@lanprop.com">Development Inquiries</a></button>
     </div>
 
+    {% include developments-menu.html %}
 
-</div>
-
-</div>
-
-</section>
+  </div>
+  
+  </section>
+  

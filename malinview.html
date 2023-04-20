@@ -1,11 +1,9 @@
 ---
 layout: default
 title: Malinview
+address: 2254 McGill St.
 header-class: project-header
 ---
-
-
-
 
 <section>
 
@@ -15,7 +13,7 @@ header-class: project-header
 
   <div class="flex-center">
     <div>
-     <h3>About Malinview (2254 McGill St.)</h3>
+      <h3>About {{ page.title }} -- {{ page.address }}</h3>
             <p>Malinview is a 68-home rental building slated for development in Vancouver's eclectic Grandview-Woodland neighbourhood. Lantern's new development is a stone's throw from Commercial Drive's Little Italy and its organic grocers, restaurants, bars, and specialty shops. Malinview offers convenience, excitement, and rich culture. The development is a short walk from the Skytrain station and Broadway's bus routes.</p>
 
             <p>Architect: <a href="http://stuarthoward.com" target="_blank">Stuart Howard Architects</a>
@@ -27,7 +25,7 @@ header-class: project-header
 
   </div>
 
-	 <img class="project-image" src="images/mcgill-9.jpg">
+	      <img class="project-image" src="images/mcgill-9.jpg">
         <img class="project-image" src="images/mcgill-1.jpg">
         <img class="project-image" src="images/mcgill-3.jpg">
         <img class="project-image" src="images/mcgill-4.jpg">
@@ -37,19 +35,7 @@ header-class: project-header
         <img class="project-image" src="images/mcgill-8.jpg">
         <img class="project-image" src="images/mcgill-2.jpg">
 
-  <div class="flex-center">
-
-
-    <div class="developments-menu">
-        <h3 class="no-border-top">Additional Projects Under Development</h3>
-         <div><a href="/kirya.html"><button>Kirya &ensp; (1188 Burnaby St.)</button></a></div>
-          <div><a href="/hadera.html" style='text-decoration:none;'><button>Hadera &ensp; (1475 Fort St.)</button></a></div>
-
-          <button class="inquiries"><a href="mailto:inquiries@lanprop.com">Development Inquiries</a></button>
-    </div>
-
-
-</div>
+  {% include developments-menu.html %}
 
 </div>
 

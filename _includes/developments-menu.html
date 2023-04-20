@@ -1,0 +1,20 @@
+
+<div class="flex-center">
+
+<div class="developments-menu">
+  
+  <h3 class="no-border-top">Additional Projects Under Development</h3>
+  
+  {% assign current_url = page.url %}
+  {% for p in site.pages %}
+    {% if p.header-class == "project-header" and p.url != current_url %}
+      <div>
+        <a href="{{ p.url }}">
+          <button>{{ p.title }} ({{ p.address }})</button>
+        </a>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+</div>
+</div>

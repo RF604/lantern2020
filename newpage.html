@@ -1,0 +1,35 @@
+---
+layout: default
+title: NAME
+address: 1016 East 8th Ave.
+header-class: project-header
+---
+
+<section>
+
+<h1>{{ page.title }}</h1>
+
+<div class="grid project-page-grid">
+
+  <div class="flex-center">
+    <div>
+     <h3>About {{ page.title }} -- {{ page.address }}</h3>
+     <p>PROJECT DESCRIPTION.</p>
+     <p>Architect: <a href="http://stuarthoward.com" target="_blank">Stuart Howard Architects</a>
+     <br>
+        Owner’s Representative: 
+        <a href="https://paladondevelopment.com/projects/" target="_blank">Paladon Development</a>
+     <br>
+        Contractor: TBD</p>
+    </div>
+  </div>
+
+  <img class="project-image" src="images/east8th-1.jpg">
+  <img class="project-image" src="images/east8th-2.jpg">
+  <img class="project-image" src="images/east8th-3.jpg">
+
+  {% include developments-menu.html %}
+
+</div>
+
+</section>

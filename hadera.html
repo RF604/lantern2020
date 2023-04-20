@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Hadera
+address: 1475 Fort St.
 header-class: project-header
 ---
 
@@ -11,7 +12,7 @@ header-class: project-header
 <div class="grid project-page-grid">
   <div class="flex-center">
     <div>
-      <h3>About Hadera (1475 Fort St)</h3>
+      <h3>About {{ page.title }} -- {{ page.address }}</h3>
             <p>Hadera is a collection of 32 rental homes in Victoria's beautiful Rockland community. Hadera is situated approximately 40 feet back from Fort Street, creating a peaceful and quiet environment for residents. Construction commencing Summer 2023.
 </p>
 <p>
@@ -58,17 +59,9 @@ header-class: project-header
 
         </form>
 
-    <div class="developments-menu">
-        <h3>Additional Projects Under Development</h3>
-          <div><a href="/kirya.html"><button>Kirya &ensp; (1188 Burnaby St.)</button></a></div>
-          <div><a href="/malinview.html"><button>Malinview &ensp; (2254 McGill St.)</button></a></div>
+  </div>
+  
+  {% include developments-menu.html %}
 
-          <button class="inquiries"><a href="mailto:inquiries@lanprop.com">Development Inquiries</a></button>
-    </div>
-
-
-</div>
-
-</div>
-
-</section>
+    </section>
+    
